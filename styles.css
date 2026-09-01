@@ -380,6 +380,51 @@ section { padding: 88px 0; }
   margin-top: 14px;
 }
 
+/* ---------- Review cards ---------- */
+.review-summary {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+}
+.review-summary .score {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  color: var(--brass);
+  line-height: 1;
+}
+.review-summary .score-meta { font-size: 0.92rem; color: var(--paper-70); }
+.review-summary .stars { color: var(--brass); letter-spacing: 2px; font-size: 1.1rem; }
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.review-card {
+  background: var(--ink);
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.review-card .stars { color: var(--brass); font-size: 0.95rem; letter-spacing: 1px; }
+.review-card p { color: var(--paper); font-size: 0.98rem; margin-bottom: 0; }
+.review-card cite {
+  font-style: normal;
+  font-size: 0.86rem;
+  color: var(--paper-70);
+  margin-top: auto;
+}
+@media (max-width: 880px) {
+  .review-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- Forms ---------- */
 .form-grid {
   display: grid;

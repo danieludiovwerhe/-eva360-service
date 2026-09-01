@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — EVA 360 Service</title>
-<meta name="description" content="Get in touch with EVA 360 Service by phone or message.">
+<title>Reviews — EVA 360 Service</title>
+<meta name="description" content="Real customer reviews for EVA 360 Service's cleaning team, via Google.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,10 +21,10 @@
     <nav class="main-nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
-      <a href="reviews.html">Reviews</a>
+      <a href="reviews.html" aria-current="page">Reviews</a>
       <a href="booking.html">Booking</a>
       <a href="about.html">About</a>
-      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <div class="header-cta">
       <a class="header-phone" href="tel:07445412907">
@@ -41,59 +41,83 @@
 
 <div class="page-header">
   <div class="wrap">
-    <p class="hero-eyebrow">Contact</p>
-    <h1>Get in touch</h1>
-    <p class="lede">Questions, quotes, or anything in between — reach us by phone or drop a message below.</p>
+    <p class="hero-eyebrow">Reviews</p>
+    <h1>What customers say</h1>
+    <p class="lede">Real reviews from our cleaning team, via Google.</p>
   </div>
 </div>
 
-<section class="section-tight">
-  <div class="wrap" style="display: grid; grid-template-columns: 0.9fr 1.4fr; gap: 48px; align-items: start;">
+<section>
+  <div class="wrap">
+    <div class="review-summary">
+      <div class="score">4.9</div>
+      <div>
+        <div class="stars">★★★★★</div>
+        <div class="score-meta">Based on 14 Google reviews</div>
+      </div>
+      <a href="https://maps.app.goo.gl/jxgSrasuUP8eo6kT8" class="btn btn-ghost-light" style="margin-left: auto;">See all reviews on Google</a>
+    </div>
 
+    <div class="review-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"We used this company to clean some very dirty stairs carpets, a large rug and a large corner settee. Excellent."</p>
+        <cite>— Jason Guy, Local Guide</cite>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Did a great job on our horrible oven in an impressively quick time! Thank you again."</p>
+        <cite>— corylus avellana, Local Guide</cite>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Efficient service, polite and very happy with how well my carpets came up clean."</p>
+        <cite>— Katie Wilson</cite>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Came following someone else letting us down. All good, worked around our special requests — highly recommend!"</p>
+        <cite>— Lisa Robinson</cite>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Great service and nice clean! Would definitely be booking again!"</p>
+        <cite>— Muna Abdelrhman</cite>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Amazing job! Spotless cleaning and friendly service! The best one!"</p>
+        <cite>— Vivi Chrysikou</cite>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Spotless cleaning… the best I've come across… good job 👍"</p>
+        <cite>— Genevieve</cite>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Fast good service!"</p>
+        <cite>— Frances Kelly</cite>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★☆</div>
+        <p>"Great clean. Nice person."</p>
+        <cite>— Lydia Newell</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
     <div>
-      <div class="panel" style="margin-bottom: 20px;">
-        <h3>Phone</h3>
-        <p class="small">Fastest way to reach us directly.</p>
-        <a href="tel:07445412907" class="btn btn-ghost-light btn-block">07445 412907</a>
-      </div>
-      <div class="panel">
-        <h3>Website</h3>
-        <p class="small">More on our services and coverage.</p>
-        <a href="https://www.eva360service.co.uk" class="btn btn-ghost-light btn-block">eva360service.co.uk</a>
-      </div>
+      <h2>Ready to see for yourself?</h2>
+      <p>Book a service and find out what the reviews are talking about.</p>
     </div>
-
-    <div class="panel">
-      <h2>Send a message</h2>
-      <form data-form action="https://formspree.io/f/xgaekoeg" method="POST">
-        <input type="hidden" name="_subject" value="New contact message — EVA 360 Service">
-        <input type="hidden" name="form_name" value="Contact form">
-        <div class="form-grid">
-          <div class="field">
-            <label for="c-name">Full name</label>
-            <input type="text" id="c-name" name="name" required autocomplete="name">
-          </div>
-          <div class="field">
-            <label for="c-phone">Phone number</label>
-            <input type="tel" id="c-phone" name="phone" required autocomplete="tel">
-          </div>
-          <div class="field full">
-            <label for="c-email">Email address</label>
-            <input type="email" id="c-email" name="email" autocomplete="email">
-          </div>
-          <div class="field full">
-            <label for="c-message">Message</label>
-            <textarea id="c-message" name="message" placeholder="How can we help?" required></textarea>
-          </div>
-        </div>
-        <p class="form-note">This is a demo form — hook it up to your email or a service like Formspree to receive real messages.</p>
-        <div style="margin-top: 22px;">
-          <button type="submit" class="btn btn-primary">Send message</button>
-        </div>
-        <div class="form-status" role="status"></div>
-      </form>
+    <div class="hero-actions">
+      <a href="booking.html" class="btn btn-ghost-light" style="border-color: var(--ink);">Book a service</a>
+      <a href="tel:07445412907" class="btn" style="background: var(--ink); color: var(--paper);">Call 07445 412907</a>
     </div>
-
   </div>
 </section>
 
